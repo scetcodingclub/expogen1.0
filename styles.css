@@ -1107,3 +1107,65 @@ ul {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 29, 61, 0.3);
 }
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .about-content,
+    .venue-content {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        max-width: 100%;
+    }
+
+    .timeline:before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 40px !important;
+        padding-right: 0 !important;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+
+    .timeline-item .timeline-dot {
+        left: 10px !important;
+        right: auto !important;
+    }
+
+    .timeline-item .timeline-content:before {
+        left: -10px;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+}
